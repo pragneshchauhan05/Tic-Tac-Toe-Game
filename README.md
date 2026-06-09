@@ -47,7 +47,7 @@ This project is perfect for beginners to learn basic web development and JavaScr
 
 ## 📸 Screenshot
 
-![Game Screenshot](Screenshot 2026-06-09 182412.png)
+![Tic Tac Toe Game](assets/screenshot.png)
 
 ---
 
