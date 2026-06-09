@@ -57,7 +57,7 @@ open: index.html in your browser.
 
 ---
 
-🤝 Contribute
+## 🤝 Contribute
 
 Feel free to fork this project and improve it!
 You can add features like:
@@ -67,3 +67,7 @@ You can add features like:
 * Sound effects 🔊
 
 ---
+
+## LICENCE
+
+[MIT LICENCE](LICENCE)
