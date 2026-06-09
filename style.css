@@ -1,0 +1,140 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Main layout */
+main {
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Game container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Game board */
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: repeat(3, 90px);
+  gap: 12px;
+  padding: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Boxes */
+.box {
+  width: 90px;
+  height: 90px;
+  border: none;
+  border-radius: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+  color: #00ffd5;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+}
+
+.box:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #2c2c2c, #3a3a3a);
+  box-shadow: 0 0 10px #00ffd5;
+}
+
+/* Buttons */
+button {
+  font-size: 1rem;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Reset button */
+#reset-btn {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  color: white;
+  margin-top: 10px;
+}
+
+#reset-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff4b2b;
+}
+
+/* Winner message box */
+.msg-container {
+  position: absolute;
+  top: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 25px;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#new-btn {
+  margin-top: 10px;
+  background: #00c6ff;
+  color: white;
+}
+
+#new-btn:hover {
+  background: #0072ff;
+}
+
+/* Hide class */
+.hide {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .game {
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    gap: 10px;
+  }
+
+  .box {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
