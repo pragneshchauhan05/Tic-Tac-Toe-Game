@@ -47,7 +47,7 @@ This project is perfect for beginners to learn basic web development and JavaScr
 
 ## 📸 Screenshot
 
-(Add your game screenshot here)
+![Game Screenshot](Screenshot 2026-06-09 182412.png)
 
 ---
 
